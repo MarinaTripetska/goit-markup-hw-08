@@ -1,0 +1,65 @@
+.clients {
+  @extend %section;
+}
+.clients__coctent-container {
+  @extend %container;
+}
+.clients__section-title {
+  @extend %section-title;
+}
+.clients__section-title--margin-b {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.clients__grid {
+  margin: -15px;
+  @media screen and(min-width: 1200px) {
+    margin: 0 -15px;
+  }
+}
+.clients__grid-item {
+  margin: 15px;
+  @media screen and(min-width: 1200px) {
+    margin: 0 15px;
+  }
+}
+.clients__list {
+  @extend %list;
+  @include flex-container;
+}
+.clients__item {
+  flex-basis: calc((100% - 15px * 4) / 2);
+
+  @media screen and(min-width: 768px) {
+    flex-basis: calc((100% - 15px * 6) / 3);
+  }
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 15px * 12) / 6);
+  }
+}
+
+.clients__link {
+  @include flex-container;
+  justify-content: center;
+  @extend %link;
+  width: 100%;
+  height: 90px;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  color: $icon-color;
+  transition: border $animation-duration $animation-timing-function,
+    color $animation-duration $animation-timing-function;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-text-cl;
+  }
+
+  .clients__icon {
+    fill: currentColor;
+  }
+}

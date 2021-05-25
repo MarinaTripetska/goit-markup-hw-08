@@ -1,0 +1,144 @@
+.footer {
+  background-color: $dark-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__content-container {
+  @extend %container;
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    @include flex-container;
+
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  @media screen and(min-width: 1200px) {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+// адрес
+.address {
+  // display: inline-block;
+  // max-width: 100%;
+  @media screen and(min-width: 1200px) {
+    flex-grow: 1;
+  }
+}
+.footer__address {
+  @media screen and(max-width: 1199.98px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-right: 20px;
+  }
+}
+.address__list {
+  @extend %list;
+}
+.address__item {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address__item--margin:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+.address__item--color-white {
+  color: $alt-text-cl;
+}
+.address__link {
+  @extend %link;
+  transition: color $animation-duration $animation-timing-function;
+}
+
+//  соц-сети
+.join {
+  @media screen and(min-width: 768px) and (max-width: 1199.98px) {
+    position: relative;
+    top: 10px;
+  }
+  @media screen and(min-width: 1200px) {
+    flex-grow: 1;
+  }
+}
+.footer__join {
+  @media screen and(max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-right: 20px;
+  }
+}
+.footer__item-title {
+  @include item-title;
+  // display: inline-block;
+  color: $alt-text-cl;
+}
+.footer__item-title--margin-b {
+  margin-bottom: 20px;
+}
+// форма
+.subscribe {
+  flex-grow: 2;
+}
+.footer__item-title--display {
+  display: block;
+}
+.subscribe__form {
+  @include flex-container;
+
+  justify-content: center;
+  align-items: flex-end;
+
+  @media screen and(min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+.subscribe__wraper {
+  width: 100%;
+  @media screen and(min-width: 1200px) {
+    margin-right: 12px;
+  }
+}
+
+.subscribe__input {
+  max-width: 450px;
+
+  width: 100%;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: $alt-text-cl;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  @media screen and(min-width: 1200px) {
+    max-width: 358px;
+  }
+}
+.subscribe__input--margin-b {
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 20px;
+  }
+}
+.subscribe__btn {
+  @include flex-container;
+  justify-content: space-around;
+}
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+}
+// .subscribe__icon--end {
+//   margin-left: 10px;
+// }

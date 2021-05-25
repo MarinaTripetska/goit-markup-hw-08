@@ -1,0 +1,19 @@
+// main button
+.button {
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px;
+  border: 1px solid $accent-text-cl;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: $alt-text-cl;
+  background-color: $accent-text-cl;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}

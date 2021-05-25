@@ -1,0 +1,82 @@
+/* Секция - наша команда */
+.team {
+  @extend %section;
+
+  background-color: $grey-bg;
+}
+.team__container {
+  @extend %container;
+}
+.team__section-title {
+  @extend %section-title;
+}
+.team__section-title--margin-b {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.team__grid {
+  @media screen and (min-width: 768px) {
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 -15px;
+  }
+}
+.team__grid-item:not(:last-child) {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 30px;
+  }
+}
+.team__grid-item {
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 15px;
+  }
+}
+
+.team__list {
+  @extend %list;
+
+  @media screen and (min-width: 768px) {
+    @include flex-container;
+  }
+}
+.team__item {
+  width: 100%;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 15px * 4) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 15px * 8) / 4);
+  }
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__content {
+  padding: 30px 15px 24px 15px;
+  // padding: 30px;
+  background-color: $alt-text-cl;
+}
+.card__name {
+  font-weight: 500;
+  color: $title-text-cl;
+}
+.card__name,
+.card__txt {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.card__txt--margin {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}

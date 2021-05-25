@@ -1,0 +1,45 @@
+.network {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+}
+.network__item:not(:last-child) {
+  margin-right: 10px;
+}
+.network__link {
+  @include flex-container;
+  @extend %link;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color $animation-duration $animation-timing-function,
+    color $animation-duration $animation-timing-function;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-cl;
+  }
+}
+.network__link--bg-color {
+  background-color: $footer-icon-bgc;
+}
+.network__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-color;
+
+  transition: fill $animation-duration $animation-timing-function;
+
+  .network__link:hover &,
+  .network__link:focus & {
+    fill: $alt-text-cl;
+  }
+}
+
+.network__icon--color {
+  fill: $alt-text-cl;
+}

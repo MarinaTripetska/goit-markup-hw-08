@@ -1,0 +1,48 @@
+.banner {
+  padding: 118px 0 198px 0;
+  max-width: 1600px;
+  height: 400px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $dark-bg;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding: 200px 0;
+  }
+}
+
+.banner--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.banner__container {
+  @extend %container;
+}
+.page-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $alt-text-cl;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+.banner__page-title {
+  margin-bottom: 30px;
+}
