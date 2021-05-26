@@ -71,9 +71,11 @@
             <li class="contacts__item contacts__item--margin">
               <a class="contacts__link" href="mailto:info@devstudio.com">
                 <svg
-                  class="contacts__icon contacts__icon--start"
-                  width="16px"
-                  height="12px"
+                  class="
+                    contacts__icon
+                    contacts__icon--envelope
+                    contacts__icon--start
+                  "
                 >
                   <use href="./images/sprite.svg#envelope"></use>
                 </svg>
@@ -83,9 +85,11 @@
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+380961111111">
                 <svg
-                  class="contacts__icon contacts__icon--start"
-                  width="10px"
-                  height="16px"
+                  class="
+                    contacts__icon
+                    contacts__icon--smartphone
+                    contacts__icon--start
+                  "
                 >
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
@@ -327,36 +331,81 @@
           </h2>
           <ul class="solutions__list solutions__grid">
             <li class="solutions__item solutions__grid-item">
-              <img
-                src="./images/our_work/box1.jpg"
-                alt="десктопные приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work@1x.webp 1x,
+                    ./images/work/work@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/work@1x.jpg 1x,
+                    ./images/work/work@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/work/work@1x.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
               <div class="solutions__overlay solutions__overlay--position">
                 <p class="solutions__txt">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="solutions__item solutions__grid-item">
-              <img
-                src="./images/our_work/img2.jpg"
-                alt="приложения на телефон"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work2@1x.webp 1x,
+                    ./images/work/work2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/work2@1x.jpg 1x,
+                    ./images/work/work2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/work/work2@1x.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
               <div class="solutions__overlay solutions__overlay--position">
                 <p class="solutions__txt">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="solutions__item solutions__grid-item">
-              <img
-                src="./images/our_work/img3.jpg"
-                alt="приложения на планшет"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/work3@1x.webp 1x,
+                    ./images/work/work3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work/work3@1x.jpg 1x,
+                    ./images/work/work3@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/work/work3@1x.jpg"
+                  alt="Десктопные приложения"
+                />
+              </picture>
               <div class="solutions__overlay solutions__overlay--position">
                 <p class="solutions__txt">Дизайнерские решения</p>
               </div>
@@ -375,39 +424,53 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile1@1x.wedp  450w,
-                    ./images/team/mobile1@2x.webp  900w,
-                    ./images/team/tablet1@1x.webp  354w,
-                    ./images/team/tablet1@2x.webp  708w,
-                    ./images/team/desktop1@1x.webp 270w,
-                    ./images/team/desktop1@2x.webp 540w
+                    ./images/team/desktop1@1x.webp 1x,
+                    ./images/team/desktop1@2x.webp 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile1@1x.jpg  450w,
-                    ./images/team/mobile1@2x.jpg  900w,
-                    ./images/team/tablet1@1x.jpg  354w,
-                    ./images/team/tablet1@2x.jpg  708w,
-                    ./images/team/desktop1@1x.jpg 270w,
-                    ./images/team/desktop1@2x.jpg 540w
+                    ./images/team/desktop1@1x.jpg 1x,
+                    ./images/team/desktop1@2x.jpg 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
-                <img
+                <source
                   srcset="
-                    ./images/team/mobile1@1x.jpg  450w,
-                    ./images/team/mobile1@2x.jpg  900w,
-                    ./images/team/tablet1@1x.jpg  354w,
-                    ./images/team/tablet1@2x.jpg  708w,
-                    ./images/team/desktop1@1x.jpg 270w,
-                    ./images/team/desktop1@2x.jpg 540w
+                    ./images/team/tablet1@1x.webp 1x,
+                    ./images/team/tablet1@2x.webp 2x
                   "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:450px) 450px, 100vw"
-                  src="./images/team/mobile1@1x.jpg"
-                  alt="Игорь Демьяненко"
+                  media="(min-width:768px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="
+                    ./images/team/tablet1@1x.jpg 1x,
+                    ./images/team/tablet1@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile1@1x.webp 1x,
+                    ./images/team/mobile1@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile1@1x.jpg 1x,
+                    ./images/team/mobile1@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile1@1x.jpg" alt="Михаил Ермаков" />
               </picture>
               <div class="card__content">
                 <h3 class="card__name">Игорь Демьяненко</h3>
@@ -478,39 +541,53 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile2@1x.wedp  450w,
-                    ./images/team/mobile2@2x.webp  900w,
-                    ./images/team/tablet2@1x.webp  354w,
-                    ./images/team/tablet2@2x.webp  708w,
-                    ./images/team/desktop2@1x.webp 270w,
-                    ./images/team/desktop2@2x.webp 540w
+                    ./images/team/desktop2@1x.webp 1x,
+                    ./images/team/desktop2@2x.webp 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile2@1x.jpg  450w,
-                    ./images/team/mobile2@2x.jpg  900w,
-                    ./images/team/tablet2@1x.jpg  354w,
-                    ./images/team/tablet2@2x.jpg  708w,
-                    ./images/team/desktop2@1x.jpg 270w,
-                    ./images/team/desktop2@2x.jpg 540w
+                    ./images/team/desktop2@1x.jpg 1x,
+                    ./images/team/desktop2@2x.jpg 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
-                <img
+                <source
                   srcset="
-                    ./images/team/mobile2@1x.jpg  450w,
-                    ./images/team/mobile2@2x.jpg  900w,
-                    ./images/team/tablet2@1x.jpg  354w,
-                    ./images/team/tablet2@2x.jpg  708w,
-                    ./images/team/desktop2@1x.jpg 270w,
-                    ./images/team/desktop2@2x.jpg 540w
+                    ./images/team/tablet2@1x.webp 1x,
+                    ./images/team/tablet2@2x.webp 2x
                   "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:450px) 450px, 100vw"
-                  src="./images/team/mobile2@1x.jpg"
-                  alt="Ольга Репина"
+                  media="(min-width:768px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="
+                    ./images/team/tablet2@1x.jpg 1x,
+                    ./images/team/tablet2@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile2@1x.webp 1x,
+                    ./images/team/mobile2@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile2@1x.jpg 1x,
+                    ./images/team/mobile2@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile2@1x.jpg" alt="Михаил Ермаков" />
               </picture>
               <div class="card__content">
                 <h3 class="card__name">Ольга Репина</h3>
@@ -581,39 +658,53 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile3@1x.wedp  450w,
-                    ./images/team/mobile3@2x.webp  900w,
-                    ./images/team/tablet3@1x.webp  354w,
-                    ./images/team/tablet3@2x.webp  708w,
-                    ./images/team/desktop3@1x.webp 270w,
-                    ./images/team/desktop3@2x.webp 540w
+                    ./images/team/desktop3@1x.webp 1x,
+                    ./images/team/desktop3@2x.webp 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile3@1x.jpg  450w,
-                    ./images/team/mobile3@2x.jpg  900w,
-                    ./images/team/tablet3@1x.jpg  354w,
-                    ./images/team/tablet3@2x.jpg  708w,
-                    ./images/team/desktop3@1x.jpg 270w,
-                    ./images/team/desktop3@2x.jpg 540w
+                    ./images/team/desktop3@1x.jpg 1x,
+                    ./images/team/desktop3@2x.jpg 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
-                <img
+                <source
                   srcset="
-                    ./images/team/mobile3@1x.jpg  450w,
-                    ./images/team/mobile3@2x.jpg  900w,
-                    ./images/team/tablet3@1x.jpg  354w,
-                    ./images/team/tablet3@2x.jpg  708w,
-                    ./images/team/desktop3@1x.jpg 270w,
-                    ./images/team/desktop3@2x.jpg 540w
+                    ./images/team/tablet3@1x.webp 1x,
+                    ./images/team/tablet3@2x.webp 2x
                   "
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:450px) 450px, 100vw"
-                  src="./images/team/mobile3@1x.jpg"
-                  alt="Николай Тарасов"
+                  media="(min-width:768px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="
+                    ./images/team/tablet3@1x.jpg 1x,
+                    ./images/team/tablet3@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile3@1x.webp 1x,
+                    ./images/team/mobile3@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile3@1x.jpg 1x,
+                    ./images/team/mobile3@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile3@1x.jpg" alt="Михаил Ермаков" />
               </picture>
               <div class="card__content">
                 <h3 class="card__name">Николай Тарасов</h3>
@@ -683,31 +774,53 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/mobile4@1x.wedp  450w,
-                    ./images/team/mobile4@2x.webp  900w,
-                    ./images/team/tablet4@1x.webp  354w,
-                    ./images/team/tablet1@2x.webp  708w,
-                    ./images/team/desktop4@1x.webp 270w,
-                    ./images/team/desktop4@2x.webp 540w
+                    ./images/team/desktop4@1x.webp 1x,
+                    ./images/team/desktop4@2x.webp 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/webp"
                 />
                 <source
                   srcset="
-                    ./images/team/mobile4@1x.jpg  450w,
-                    ./images/team/mobile4@2x.jpg  900w,
-                    ./images/team/tablet4@1x.jpg  354w,
-                    ./images/team/tablet4@2x.jpg  708w,
-                    ./images/team/desktop4@1x.jpg 270w,
-                    ./images/team/desktop4@2x.jpg 540w
+                    ./images/team/desktop4@1x.jpg 1x,
+                    ./images/team/desktop4@2x.jpg 2x
                   "
+                  media="(min-width:1200px)"
                   type="image/jpeg"
                 />
-                <img
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (min-width: 450px) 100vw, 100vw"
-                  src="./images/team/mobile4@1x.jpg"
-                  alt="Михаил Ермаков"
+                <source
+                  srcset="
+                    ./images/team/tablet4@1x.webp 1x,
+                    ./images/team/tablet4@2x.webp 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/webp"
                 />
+                <source
+                  srcset="
+                    ./images/team/tablet4@1x.jpg 1x,
+                    ./images/team/tablet4@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile4@1x.webp 1x,
+                    ./images/team/mobile4@2x.webp 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile4@1x.jpg 1x,
+                    ./images/team/mobile4@2x.jpg 2x
+                  "
+                  media="(max-width:767.98px)"
+                  type="image/jpeg"
+                />
+                <img src="./images/team/mobile4@1x.jpg" alt="Михаил Ермаков" />
               </picture>
 
               <div class="card__content">

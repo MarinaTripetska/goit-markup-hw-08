@@ -133,12 +133,12 @@
 }
 .subscribe__btn {
   @include flex-container;
-  justify-content: space-around;
+  justify-content: center;
 }
 .subscribe__icon {
   width: 24px;
   height: 24px;
 }
-// .subscribe__icon--end {
-//   margin-left: 10px;
-// }
+.subscribe__icon--end {
+  margin-left: 10px;
+}

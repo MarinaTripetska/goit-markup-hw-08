@@ -68,9 +68,11 @@
             <li class="contacts__item contacts__item--margin">
               <a class="contacts__link" href="mailto:info@devstudio.com">
                 <svg
-                  class="contacts__icon contacts__icon--start"
-                  width="16px"
-                  height="12px"
+                  class="
+                    contacts__icon
+                    contacts__icon--envelope
+                    contacts__icon--start
+                  "
                 >
                   <use href="./images/sprite.svg#envelope"></use>
                 </svg>
@@ -80,9 +82,11 @@
             <li class="contacts__item">
               <a class="contacts__link" href="tel:+380961111111">
                 <svg
-                  class="contacts__icon contacts__icon--start"
-                  width="10px"
-                  height="16px"
+                  class="
+                    contacts__icon
+                    contacts__icon--smartphone
+                    contacts__icon--start
+                  "
                 >
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
@@ -90,6 +94,7 @@
               </a>
             </li>
           </ul>
+
           <ul class="social__list">
             <li class="social__item">
               <a
@@ -171,12 +176,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img.jpg"
-                      alt="Технокряк "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop1@1x.webp 1x,
+                          ./images/portfolio/desktop1@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop1@1x.jpg 1x,
+                          ./images/portfolio/desktop1@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet1@1x.webp 1x,
+                          ./images/portfolio/tablet1@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet1@1x.jpg 1x,
+                          ./images/portfolio/tablet1@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile1@1x.webp 1x,
+                          ./images/portfolio/mobile1@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile1@1x.jpg 1x,
+                          ./images/portfolio/mobile1@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile1@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -198,12 +251,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-1.jpg "
-                      alt="Постер "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop2@1x.webp 1x,
+                          ./images/portfolio/desktop2@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop2@1x.jpg 1x,
+                          ./images/portfolio/desktop2@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet2@1x.webp 1x,
+                          ./images/portfolio/tablet2@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet2@1x.jpg 1x,
+                          ./images/portfolio/tablet2@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile2@1x.webp 1x,
+                          ./images/portfolio/mobile2@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile2@1x.jpg 1x,
+                          ./images/portfolio/mobile2@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile2@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -227,12 +328,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-2.jpg "
-                      alt="Ресторан Seafood "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop3@1x.webp 1x,
+                          ./images/portfolio/desktop3@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop3@1x.jpg 1x,
+                          ./images/portfolio/desktop3@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet3@1x.webp 1x,
+                          ./images/portfolio/tablet3@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet3@1x.jpg 1x,
+                          ./images/portfolio/tablet3@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile3@1x.webp 1x,
+                          ./images/portfolio/mobile3@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile3@1x.jpg 1x,
+                          ./images/portfolio/mobile3@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile3@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -254,12 +403,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-3.jpg "
-                      alt="Проект Prime "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop4@1x.webp 1x,
+                          ./images/portfolio/desktop4@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop4@1x.jpg 1x,
+                          ./images/portfolio/desktop4@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet4@1x.webp 1x,
+                          ./images/portfolio/tablet4@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet4@1x.jpg 1x,
+                          ./images/portfolio/tablet4@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile4@1x.webp 1x,
+                          ./images/portfolio/mobile4@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile4@1x.jpg 1x,
+                          ./images/portfolio/mobile4@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile4@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -281,12 +478,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-4.jpg "
-                      alt="Проект Boxes "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop5@1x.webp 1x,
+                          ./images/portfolio/desktop5@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop5@1x.jpg 1x,
+                          ./images/portfolio/desktop5@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet5@1x.webp 1x,
+                          ./images/portfolio/tablet5@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet5@1x.jpg 1x,
+                          ./images/portfolio/tablet5@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile5@1x.webp 1x,
+                          ./images/portfolio/mobile5@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile5@1x.jpg 1x,
+                          ./images/portfolio/mobile5@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile5@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -308,12 +553,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-5.jpg "
-                      alt="Inspiration has no Borders "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop6@1x.webp 1x,
+                          ./images/portfolio/desktop6@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop6@1x.jpg 1x,
+                          ./images/portfolio/desktop6@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet6@1x.webp 1x,
+                          ./images/portfolio/tablet6@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet6@1x.jpg 1x,
+                          ./images/portfolio/tablet6@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile6@1x.webp 1x,
+                          ./images/portfolio/mobile6@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile6@1x.jpg 1x,
+                          ./images/portfolio/mobile6@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile6@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -335,12 +628,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-6.jpg "
-                      alt="Издание Limited Edition "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop7@1x.webp 1x,
+                          ./images/portfolio/desktop7@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop7@1x.jpg 1x,
+                          ./images/portfolio/desktop7@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet7@1x.webp 1x,
+                          ./images/portfolio/tablet7@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet7@1x.jpg 1x,
+                          ./images/portfolio/tablet7@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile7@1x.webp 1x,
+                          ./images/portfolio/mobile7@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile7@1x.jpg 1x,
+                          ./images/portfolio/mobile7@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile7@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -362,12 +703,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-7.jpg "
-                      alt="Проект LAB "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop8@1x.webp 1x,
+                          ./images/portfolio/desktop8@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop8@1x.jpg 1x,
+                          ./images/portfolio/desktop8@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet8@1x.webp 1x,
+                          ./images/portfolio/tablet8@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet8@1x.jpg 1x,
+                          ./images/portfolio/tablet8@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile8@1x.webp 1x,
+                          ./images/portfolio/mobile8@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile8@1x.jpg 1x,
+                          ./images/portfolio/mobile8@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile8@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения
@@ -389,12 +778,60 @@
               <a class="product" href=" ">
                 <div class="product__shadow">
                   <div class="product__relative-wraper">
-                    <img
-                      src="./images/portfolio/img-8.jpg "
-                      alt="Growing Business "
-                      height="294"
-                      width="370"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop9@1x.webp 1x,
+                          ./images/portfolio/desktop9@2x.webp 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/desktop9@1x.jpg 1x,
+                          ./images/portfolio/desktop9@2x.jpg 2x
+                        "
+                        media="(min-width:1200px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet9@1x.webp 1x,
+                          ./images/portfolio/tablet9@2x.webp 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/tablet9@1x.jpg 1x,
+                          ./images/portfolio/tablet9@2x.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile9@1x.webp 1x,
+                          ./images/portfolio/mobile9@2x.webp 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="
+                          ./images/portfolio/mobile9@1x.jpg 1x,
+                          ./images/portfolio/mobile9@2x.jpg 2x
+                        "
+                        media="(max-width:767.98px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/portfolio/mobile9@1x.jpg"
+                        alt="Михаил Ермаков"
+                      />
+                    </picture>
                     <div class="product__overlay product__overlay--position">
                       <p class="product__overlay-txt">
                         Технокряк это современная площадка распространения

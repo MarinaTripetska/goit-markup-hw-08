@@ -714,8 +714,13 @@ address {
 .contacts__link {
   padding-top: 15px;
   padding-bottom: 15px;
-  transform: scale(1) translateX(0px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767.98px) {
+  .contacts__link {
+    transform: scale(1), translateX(0px);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -739,7 +744,7 @@ address {
 @media screen and (max-width: 767.98px) {
   .contacts__link:focus,
   .contacts__link:hover {
-    transform: scale(1.2) translateX(20px);
+    transform: scale(1.2), translateX(20px);
   }
 }
 
@@ -751,6 +756,30 @@ address {
 @media screen and (max-width: 767.98px) {
   .contacts__icon {
     display: none;
+  }
+}
+
+.contacts__icon--envelope {
+  width: 16px;
+  height: 12px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__icon--envelope {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.contacts__icon--smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__icon--smartphone {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -1676,12 +1705,16 @@ address {
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .subscribe__icon {
   width: 24px;
   height: 24px;
+}
+
+.subscribe__icon--end {
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 767.98px) {
