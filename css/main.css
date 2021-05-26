@@ -714,7 +714,7 @@ address {
 .contacts__link {
   padding-top: 15px;
   padding-bottom: 15px;
-  transform: scale(1);
+  transform: scale(1) translateX(0px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -790,7 +790,7 @@ address {
   padding: 118px 0 198px 0;
   max-width: 1600px;
   height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/mobile-bg@1x.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -802,6 +802,36 @@ address {
   .banner {
     height: 600px;
     padding: 200px 0;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/bg-image/mobile-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/tablet-bg@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/bg-image/tablet-bg@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/desktop-bg@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: url(../images/bg-image/desktop-bg@2x.jpg);
   }
 }
 
@@ -1308,7 +1338,6 @@ address {
 }
 
 .team__item {
-  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }

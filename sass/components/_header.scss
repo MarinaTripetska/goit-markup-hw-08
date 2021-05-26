@@ -204,29 +204,29 @@
   @extend %link;
   padding-top: 15px;
   padding-bottom: 15px;
-  transform: scale(1);
+  transform: scale(1) translateX(0px);
 
   transition: transform $animation-duration $animation-timing-function,
     color $animation-duration $animation-timing-function;
 
   @media screen and(min-width: 768px) {
     @include flex-container;
-
     padding-top: 5px;
     padding-bottom: 5px;
   }
+
   @media screen and(min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 }
+
 .contacts__link:focus,
 .contacts__link:hover {
   @media screen and(max-width: 767.98px) {
     transform: scale(1.2) translateX(20px);
   }
 }
-
 .contacts__icon {
   display: inline-block;
   fill: currentColor;
