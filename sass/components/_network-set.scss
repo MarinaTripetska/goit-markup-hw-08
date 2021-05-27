@@ -3,6 +3,11 @@
   display: flex;
   justify-content: center;
 }
+.footer__network {
+  @media screen and(min-width:1200px) {
+    justify-content: start;
+  }
+}
 .network__item:not(:last-child) {
   margin-right: 10px;
 }

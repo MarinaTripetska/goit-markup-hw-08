@@ -55,8 +55,10 @@
     position: absolute;
     left: 0;
     top: 0;
+
     width: 100%;
-    // min-height: 796px;
+    height: 100vh;
+    overflow-y: scroll;
 
     padding: 48px 40px;
 
@@ -68,22 +70,25 @@
     z-index: 5;
   }
   &.is-open {
-    display: block;
+    @media screen and(max-width:767.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 
-  @media screen and(min-width: 480px) and(max-width:767.98px) {
-    width: 480px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   @media screen and(min-width: 768px) {
     display: inline-flex;
+
     justify-content: space-between;
     flex-grow: 2;
   }
 }
 
 .header__navigation {
+  @media screen and(max-width:767.98px) {
+    flex-grow: 2;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -100,20 +105,24 @@
   }
 }
 
-.navigation__list--margin-b {
-  @media screen and(max-width: 767.98px) {
-    margin-bottom: 302px;
-  }
-}
+// .navigation__list--margin-b {
+//   @media screen and(max-width: 767.98px) {
+//     margin-bottom: 302px;
+//   }
+// }
 
 .navigation__item {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size: 30px;
 
-  @media screen and(max-width: 767.98px) {
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  @media screen and(min-width:400px) {
     font-size: 40px;
-    line-height: 1.18;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -195,6 +204,9 @@
   @media screen and (max-width: 767.98px) {
     margin-bottom: 32px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 10px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
@@ -202,20 +214,15 @@
 
 .contacts__link {
   @extend %link;
-  padding-top: 15px;
-  padding-bottom: 15px;
 
-  @media screen and(max-width: 767.98px) {
-    transform: scale(1), translateX(0px);
+  transition: color $animation-duration $animation-timing-function;
+
+  @media screen and(max-width:767.98px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-
-  transition: transform $animation-duration $animation-timing-function,
-    color $animation-duration $animation-timing-function;
-
   @media screen and(min-width: 768px) {
     @include flex-container;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
 
   @media screen and(min-width: 1200px) {
@@ -223,12 +230,41 @@
     padding-bottom: 32px;
   }
 }
-@media screen and(max-width: 767.98px) {
-  .contacts__link:focus,
-  .contacts__link:hover {
-    transform: scale(1.2), translateX(20px);
+@media screen and(min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__link--padding-top {
+    padding-top: 21px;
+  }
+  .contacts__link--padding-b {
+    padding-bottom: 21px;
   }
 }
+
+.contacts__link--phone {
+  @media screen and(max-width:399.98px) {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: $accent-text-cl;
+  }
+
+  @media screen and(min-width:400px) and(max-width:767.98px) {
+    font-size: 34px;
+    font-weight: 500;
+
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: $accent-text-cl;
+  }
+}
+// @media screen and(max-width: 767.98px) {
+//   .contacts__link:focus,
+//   .contacts__link:hover {
+//     transform: scale(1.2), translateX(20px);
+//   }
+// }
 .contacts__icon {
   display: inline-block;
   fill: currentColor;
