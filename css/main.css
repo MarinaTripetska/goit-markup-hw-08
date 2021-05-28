@@ -846,7 +846,7 @@ address {
 }
 
 .banner {
-  padding: 118px 0 198px 0;
+  padding: 118px 0 118px 0;
   max-width: 1600px;
   height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image/mobile-bg@1x.jpg);
