@@ -134,6 +134,10 @@
   }
 
   &-txt {
+    @media screen and(max-width:398px) {
+      font-size: 15px;
+    }
+
     font-size: 18px;
     line-height: 1.57;
 

@@ -296,6 +296,10 @@ body {
   color: #757575;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -1917,6 +1921,12 @@ address {
   font-size: 18px;
   line-height: 1.57;
   color: #ffffff;
+}
+
+@media screen and (max-width: 398px) {
+  .product__overlay-txt {
+    font-size: 15px;
+  }
 }
 
 .product__content {

@@ -16,7 +16,9 @@ body {
   letter-spacing: 0.03em;
   color: $main-text-cl;
 }
-
+body.menu-open {
+  overflow: hidden;
+}
 h1,
 h2,
 h3,
