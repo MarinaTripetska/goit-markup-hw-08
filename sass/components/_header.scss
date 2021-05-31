@@ -180,6 +180,10 @@
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 767.98px) {
+    @include flex-container;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
     font-size: 24px;
     line-height: 1.17;
   }
@@ -218,6 +222,7 @@
   transition: color $animation-duration $animation-timing-function;
 
   @media screen and(max-width:767.98px) {
+    display: block;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -242,7 +247,7 @@
 .contacts__link--phone {
   @media screen and(max-width:399.98px) {
     font-weight: 500;
-    font-size: 26px;
+    font-size: 23px;
     line-height: 1.18;
     letter-spacing: 0.02em;
 
@@ -259,12 +264,7 @@
     color: $accent-text-cl;
   }
 }
-// @media screen and(max-width: 767.98px) {
-//   .contacts__link:focus,
-//   .contacts__link:hover {
-//     transform: scale(1.2), translateX(20px);
-//   }
-// }
+
 .contacts__icon {
   display: inline-block;
   fill: currentColor;
