@@ -1,14 +1,36 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+import refs from './refs.js'
+const {openModalBtn: openBtn,  closeModalBtn: closeBtn, modal, modalForm, messageArea} = refs;
+const STORAGE_KEY = 'inputMsg';
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
 
+export default () => {
+
+  openBtn.addEventListener('click', toggleModal);
+  closeBtn.addEventListener('click', toggleModal);
+  modalForm.addEventListener('submit', onFormSubmit)
+  messageArea.addEventListener('input', onTextareaInput);
+ 
+  if (localStorage.getItem(STORAGE_KEY) !== null) {
+  messageArea.textContent = localStorage.getItem(STORAGE_KEY)
+}
+  
   function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+  modal.classList.toggle('is-hidden');
+}
+  
+  
+  function onFormSubmit(e) {
+    e.preventDefault();
+    console.log('відправляєм форму');
+    toggleModal();
+    localStorage.removeItem(STORAGE_KEY);
+    e.currentTarget.reset();
+    
   }
-})();
+
+  function onTextareaInput(e) {
+    const message = e.target.value
+    localStorage.setItem(STORAGE_KEY, message)
+  }
+}
+
